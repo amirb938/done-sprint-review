@@ -1,0 +1,215 @@
+{
+  "board_id": 8,
+  "sprint_prefix": "TeamAC",
+  "items": [
+    {
+      "group": "Acquire new users on Done",
+      "title": "Mature the new Done UI (v27) — forced rollout on current TVs",
+      "team": "Team A/C",
+      "sources": [
+        {
+          "epic": "TC-85",
+          "fixVersions": [
+            "8.4"
+          ]
+        }
+      ],
+      "title_fa": "تکمیل و بلوغ نسخهٔ جدید Done UI 27 - انتشار اجباری روی تلویزیون‌های فعلی",
+      "group_fa": "جذب کاربر جدید در پلتفرم Done",
+      "prerequisites": "Release order follows version numbers: 8.2 → 8.3 → 8.4. Needs 8.3 first (install-permission guidance TC-281 is used by the forced-update wizard TC-102). DoneApps 7.0 is the force-update vehicle (TC-99).",
+      "prerequisite_releases": [
+        "8.2",
+        "8.3",
+        "DoneApps 7.0"
+      ],
+      "prerequisites_fa": "ترتیب ریلیزها طبق شماره نسخه است: 8.2 ← 8.3 ← 8.4. ابتدا به 8.3 نیاز دارد (راهنمای مجوز نصب TC-281 در ویزارد آپدیت اجباری TC-102 استفاده می‌شود). DoneApps 7.0 وسیلهٔ آپدیت اجباری است (TC-99)."
+    },
+    {
+      "group": "Acquire new users on Done",
+      "title": "Full ROM for new group boxes and TVs — Android 14",
+      "team": "Team A/C, Box",
+      "sources": [
+        {
+          "epic": "TC-85",
+          "fixVersions": [
+            "8.5",
+            "8.6"
+          ]
+        }
+      ],
+      "title_fa": "آماده‌سازی ROM کامل برای باکس و تلویزیون‌های جدید گروه - اندروید ۱۴",
+      "group_fa": "جذب کاربر جدید در پلتفرم Done",
+      "prerequisites": "Follows 8.4 by version number: 8.5 (Android 14 TV ROM), then 8.6 (Android 14 Box ROM).",
+      "prerequisite_releases": [
+        "8.4"
+      ],
+      "prerequisites_fa": "طبق شماره نسخه بعد از 8.4 می‌آید: ابتدا 8.5 (ROM تلویزیون اندروید ۱۴) و سپس 8.6 (ROM باکس اندروید ۱۴)."
+    },
+    {
+      "group": "Acquire new users on Done",
+      "title": "Publish Done on Google Play so it can be installed on new TVs",
+      "team": "Team A/C",
+      "sources": [
+        {
+          "epic": "TC-293"
+        }
+      ],
+      "title_fa": "انتشار پلتفرم دان روی گوگل‌پلی با هدف قابل نصب بودن روی تلویزیون‌های جدید",
+      "group_fa": "جذب کاربر جدید در پلتفرم Done",
+      "prerequisites": "None. R&D only (TC-293); it can progress on its own.",
+      "prerequisite_releases": [],
+      "prerequisites_fa": "ندارد. فقط R&D است (TC-293) و مستقل پیش می‌رود."
+    },
+    {
+      "group": "Acquire new users on Done",
+      "title": "Release the generic version (Generic Device) for all devices",
+      "team": "",
+      "sources": [
+        {
+          "epic": "TC-85",
+          "fixVersions": [
+            "8.3"
+          ]
+        }
+      ],
+      "title_fa": "انتشار نسخه عمومی (Generic Device) برای تمامی دستگاه‌ها",
+      "group_fa": "جذب کاربر جدید در پلتفرم Done",
+      "prerequisites": "TC-280 (agree scope) blocks TC-279 (device test matrix); TC-284 (custom_launcher intent) blocks both. Feeds 8.4 (TC-281 → TC-102).",
+      "prerequisite_releases": [
+        "8.2"
+      ],
+      "prerequisites_fa": "TC-280 (توافق روی اسکوپ) جلوی TC-279 (ماتریس تست دستگاه‌ها) را می‌گیرد؛ TC-284 (intent مربوط به custom_launcher) جلوی هر دو را می‌گیرد. ورودی 8.4 است (TC-281 ← TC-102)."
+    },
+    {
+      "group": "Acquire new users on Done",
+      "title": "Complete the Campaign Management project",
+      "team": "Team A/C",
+      "sources": [
+        {
+          "epic": "TC-1"
+        },
+        {
+          "epic": "TC-84"
+        },
+        {
+          "epic": "TC-153"
+        }
+      ],
+      "title_fa": "تکمیل پروژه مدیریت کمپین",
+      "group_fa": "جذب کاربر جدید در پلتفرم Done",
+      "prerequisites": "Panel release 2 follows release 1; release 1 starts only after the design is presented, TC-92 is accepted and the estimate is accepted. The same engineer (Arian) is shared with PWA Phase 0.",
+      "prerequisite_releases": [],
+      "prerequisites_fa": "ریلیز ۲ پنل بعد از ریلیز ۱ می‌آید؛ ریلیز ۱ فقط بعد از ارائهٔ طراحی، پذیرفته‌شدن TC-92 و پذیرفته‌شدن برآورد شروع می‌شود. Arian بین این پنل و فاز ۰ PWA مشترک است."
+    },
+    {
+      "group": "Acquire new users on Done",
+      "title": "Release phase 0 of the Done mobile version",
+      "team": "Team A/C",
+      "sources": [
+        {
+          "epic": "TC-86",
+          "fixVersions": [
+            "PWA-Part1"
+          ]
+        }
+      ],
+      "title_fa": "انتشار نسخه فاز ۰ نسخه موبایل پلتفرم Done",
+      "group_fa": "جذب کاربر جدید در پلتفرم Done",
+      "prerequisites": "Independent of Campaign Management. Capacity is shared with the Campaign Management panel (same engineer, Arian).",
+      "prerequisite_releases": [],
+      "prerequisites_fa": "مستقل از Campaign Management است. ظرفیت با پنل Campaign Management مشترک است (همان نیرو، Arian)."
+    },
+    {
+      "group": "Acquire new users on Done",
+      "title": "Technical and product definition of phase 1 of the Done mobile version",
+      "team": "Team A/C",
+      "sources": [
+        {
+          "epic": "TC-86",
+          "fixVersions": [
+            "PWA-Part2"
+          ]
+        }
+      ],
+      "title_fa": "تعریف فنی و محصولی فاز ۱ نسخه موبایل پلتفرم Done",
+      "group_fa": "جذب کاربر جدید در پلتفرم Done",
+      "prerequisites": "Follows Phase 0, including any pause while the Campaign Management panel is in progress.",
+      "prerequisite_releases": [
+        "PWA-Part1"
+      ],
+      "prerequisites_fa": "بعد از فاز ۰ می‌آید، از جمله هر توقفی که Arian روی پنل Campaign Management کار می‌کند."
+    },
+    {
+      "group": "Acquire new users on Done",
+      "title": "Technical and product definition of Profile + the Device identifier",
+      "team": "Team A/C",
+      "sources": [
+        {
+          "epic": "TC-88"
+        }
+      ],
+      "title_fa": "تعریف فنی و محصول پروفایل + شناسه شاخص Device",
+      "group_fa": "جذب کاربر جدید در پلتفرم Done",
+      "prerequisites": "No dependency recorded. The Device identifier work (TC-285) overlaps with 8.3.",
+      "prerequisite_releases": [],
+      "prerequisites_fa": "وابستگی ثبت نشده. کار شناسهٔ Device (TC-285) با 8.3 هم‌پوشانی دارد."
+    },
+    {
+      "group": "Data and user-behavior measurement",
+      "title": "Full Watch Time funnel in the new data architecture",
+      "team": "Team A/C, Data",
+      "sources": [],
+      "title_fa": "پیاده‌سازی کامل فانل Watch Time در معماری جدید داده",
+      "group_fa": "داده و اندازه‌گیری رفتار کاربر",
+      "prerequisites": "",
+      "prerequisite_releases": [],
+      "prerequisites_fa": ""
+    },
+    {
+      "group": "Improve the development pipeline and product operations",
+      "title": "Complete the development pipeline",
+      "team": "Team A/C, Team B, Data",
+      "sources": [],
+      "title_fa": "تکمیل پایپلاین توسعه",
+      "group_fa": "بهبود پایپلاین توسعه و عملیات محصول",
+      "prerequisites": "",
+      "prerequisite_releases": [],
+      "prerequisites_fa": ""
+    },
+    {
+      "group": "Keep the current platform stable",
+      "title": "Maintain daily users (DPU) of the platform",
+      "team": "Team A/C",
+      "sources": [],
+      "title_fa": "نگهداشت تعداد کاربر روزانه پلتفرم DPU",
+      "group_fa": "پایداری وضعیت فعلی پلتفرم",
+      "prerequisites": "",
+      "prerequisite_releases": [],
+      "prerequisites_fa": ""
+    },
+    {
+      "group": "Keep the current platform stable",
+      "title": "Maintain the successful-transaction ratio across the platform",
+      "team": "Team A/C",
+      "sources": [],
+      "title_fa": "نگهداشت میانگین نسبت تراکنش موفق در کل پلتفرم",
+      "group_fa": "پایداری وضعیت فعلی پلتفرم",
+      "prerequisites": "",
+      "prerequisite_releases": [],
+      "prerequisites_fa": ""
+    }
+  ],
+  "release_overview": [
+    "8.2",
+    "8.3",
+    "8.4",
+    "8.5",
+    "8.6",
+    "DoneApps 7.0",
+    "CM-Launch",
+    "CM-Panel-Placement",
+    "CM-Panel-Campaign",
+    "PWA-Part1",
+    "PWA-Part2"
+  ]
+}
