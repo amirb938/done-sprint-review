@@ -1,6 +1,14 @@
 {
   "board_id": 8,
   "sprint_prefix": "TeamAC",
+  "sprint_goals_fa": {
+    "TeamAC 2026Q4S1": "تعریف مستندات پروژه برای DoneUI، مدیریت کمپین و پنل، و PWA",
+    "TeamAC 2026Q4S2": "انتشار DoneUI 8.2 و DoneApps 7.0 · پوستهٔ PWA در حال بازبینی · رفع مشکل ناوبری و لیست خالی",
+    "TeamAC 2026Q4S3": "انتشار DoneUI 8.2 و 8.3 و DoneApps 7.0 | تحویل نیازمندی‌های پنل مدیریت کمپین توسط بک‌اند | رسیدن PWA به نسخهٔ آمادهٔ انتشار",
+    "TeamAC 2026Q4S4": "تست رام اندروید ۱۴ برای DoneUI، کیبورد و system actions. TDD مربوط به AppUsage و تحقیق و توسعهٔ انتشار در Google Play به‌موازات انجام می‌شود.",
+    "TeamAC 2026Q4S5": "رفع موانع رام اندروید ۱۴ و انتشار DoneUI 8.4 (خط تلویزیون) و 8.5 (خط باکس).",
+    "TeamAC 2026Q4S6": "صف ورودی در صورت باقی ماندن ظرفیت: اپ‌های جعلی، مستندات دیپ‌لینک و کمک 3L به Team E."
+  },
   "items": [
     {
       "group": "Acquire new users on Done",
@@ -10,7 +18,9 @@
         {
           "epic": "TC-85",
           "fixVersions": [
-            "8.4"
+            "Done 8.2 — CDP & Player",
+            "Done 8.4 — SideNavigation (Force)",
+            "DoneApps 7.0"
           ]
         }
       ],
@@ -18,8 +28,8 @@
       "group_fa": "جذب کاربر جدید در پلتفرم Done",
       "prerequisites": "Release order follows version numbers: 8.2 → 8.3 → 8.4. Needs 8.3 first (install-permission guidance TC-281 is used by the forced-update wizard TC-102). DoneApps 7.0 is the force-update vehicle (TC-99).",
       "prerequisite_releases": [
-        "8.2",
-        "8.3",
+        "Done 8.2 — CDP & Player",
+        "Done 8.3 — GenericDevice",
         "DoneApps 7.0"
       ],
       "prerequisites_fa": "ترتیب ریلیزها طبق شماره نسخه است: 8.2 ← 8.3 ← 8.4. ابتدا به 8.3 نیاز دارد (راهنمای مجوز نصب TC-281 در ویزارد آپدیت اجباری TC-102 استفاده می‌شود). DoneApps 7.0 وسیلهٔ آپدیت اجباری است (TC-99)."
@@ -32,8 +42,8 @@
         {
           "epic": "TC-85",
           "fixVersions": [
-            "8.5",
-            "8.6"
+            "Done 8.5 — Android14 TV",
+            "Done 8.6 — Android14 Box"
           ]
         }
       ],
@@ -41,7 +51,9 @@
       "group_fa": "جذب کاربر جدید در پلتفرم Done",
       "prerequisites": "Follows 8.4 by version number: 8.5 (Android 14 TV ROM), then 8.6 (Android 14 Box ROM).",
       "prerequisite_releases": [
-        "8.4"
+        "Done 8.2 — CDP & Player",
+        "Done 8.3 — GenericDevice",
+        "Done 8.4 — SideNavigation (Force)"
       ],
       "prerequisites_fa": "طبق شماره نسخه بعد از 8.4 می‌آید: ابتدا 8.5 (ROM تلویزیون اندروید ۱۴) و سپس 8.6 (ROM باکس اندروید ۱۴)."
     },
@@ -68,7 +80,7 @@
         {
           "epic": "TC-85",
           "fixVersions": [
-            "8.3"
+            "Done 8.3 — GenericDevice"
           ]
         }
       ],
@@ -76,7 +88,7 @@
       "group_fa": "جذب کاربر جدید در پلتفرم Done",
       "prerequisites": "TC-280 (agree scope) blocks TC-279 (device test matrix); TC-284 (custom_launcher intent) blocks both. Feeds 8.4 (TC-281 → TC-102).",
       "prerequisite_releases": [
-        "8.2"
+        "Done 8.2 — CDP & Player"
       ],
       "prerequisites_fa": "TC-280 (توافق روی اسکوپ) جلوی TC-279 (ماتریس تست دستگاه‌ها) را می‌گیرد؛ TC-284 (intent مربوط به custom_launcher) جلوی هر دو را می‌گیرد. ورودی 8.4 است (TC-281 ← TC-102)."
     },
@@ -109,7 +121,8 @@
         {
           "epic": "TC-86",
           "fixVersions": [
-            "PWA-Part1"
+            "PWA-Part1",
+            "PWA-Part2"
           ]
         }
       ],
@@ -123,21 +136,15 @@
       "group": "Acquire new users on Done",
       "title": "Technical and product definition of phase 1 of the Done mobile version",
       "team": "Team A/C",
-      "sources": [
-        {
-          "epic": "TC-86",
-          "fixVersions": [
-            "PWA-Part2"
-          ]
-        }
-      ],
+      "sources": [],
       "title_fa": "تعریف فنی و محصولی فاز ۱ نسخه موبایل پلتفرم Done",
       "group_fa": "جذب کاربر جدید در پلتفرم Done",
-      "prerequisites": "Follows Phase 0, including any pause while the Campaign Management panel is in progress.",
+      "prerequisites": "Follows Phase 0 (PWA-Part1 and PWA-Part2), including any pause while the Campaign Management panel is in progress. No Phase 1 epic exists in Jira yet. PWA-Part2 is the second half of Phase 0, not Phase 1.",
       "prerequisite_releases": [
-        "PWA-Part1"
+        "PWA-Part1",
+        "PWA-Part2"
       ],
-      "prerequisites_fa": "بعد از فاز ۰ می‌آید، از جمله هر توقفی که Arian روی پنل Campaign Management کار می‌کند."
+      "prerequisites_fa": "بعد از فاز ۰ (PWA-Part1 و PWA-Part2) می‌آید، از جمله هر توقفی که Arian روی پنل Campaign Management کار می‌کند. هنوز اپیکی برای فاز ۱ در Jira نیست. PWA-Part2 نیمهٔ دوم فاز ۰ است، نه فاز ۱."
     },
     {
       "group": "Acquire new users on Done",
@@ -169,12 +176,16 @@
       "group": "Improve the development pipeline and product operations",
       "title": "Complete the development pipeline",
       "team": "Team A/C, Team B, Data",
-      "sources": [],
+      "sources": [
+        {
+          "epic": "TC-270"
+        }
+      ],
       "title_fa": "تکمیل پایپلاین توسعه",
       "group_fa": "بهبود پایپلاین توسعه و عملیات محصول",
-      "prerequisites": "",
+      "prerequisites": "Pilot scope documentation (TC-270): every Done UI and Backend Home module gets a written scope. The unified code review pilot depends on these scopes.",
       "prerequisite_releases": [],
-      "prerequisites_fa": ""
+      "prerequisites_fa": "مستندسازی دامنهٔ پایلوت (TC-270): برای هر ماژول Done UI و Backend Home یک دامنهٔ مکتوب نوشته می‌شود. پایلوت بازبینی کد یکپارچه به این دامنه‌ها وابسته است."
     },
     {
       "group": "Keep the current platform stable",
@@ -200,11 +211,11 @@
     }
   ],
   "release_overview": [
-    "8.2",
-    "8.3",
-    "8.4",
-    "8.5",
-    "8.6",
+    "Done 8.2 — CDP & Player",
+    "Done 8.3 — GenericDevice",
+    "Done 8.4 — SideNavigation (Force)",
+    "Done 8.5 — Android14 TV",
+    "Done 8.6 — Android14 Box",
     "DoneApps 7.0",
     "CM-Launch",
     "CM-Panel-Placement",

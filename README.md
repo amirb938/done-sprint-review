@@ -3,9 +3,9 @@
 Sprint-review reporting for Team A/C, straight from Jira. One command builds a bilingual (EN/FA) HTML report that answers the questions asked in every sprint review:
 
 - **Where are we on each roadmap item?** Progress per item, with the epics and the prerequisite releases behind it.
-- **What did this sprint move?** Estimated work done (Story Points), tasks done, and each item's progress from sprint start to sprint end.
+- **What did this sprint move?** Estimated work done (days), tasks done, and each item's progress from sprint start to sprint end.
 - **Where is each release?** Open and released versions, with the Jira description one click away.
-- **What is behind every number?** Every row opens the task list: key, summary, status, assignee, Story Points.
+- **What is behind every number?** Every row opens the task list: key, summary, status, assignee, estimate in days.
 
 It is a plain Python script (standard library only, no `pip install`) and also ships as a [Claude Code](https://claude.com/claude-code) skill, so you can ask Claude for the report in plain words.
 
@@ -136,4 +136,4 @@ This copies the skill to `~/.claude/skills/sprint-review-progress` and puts your
 | `Jira answered HTTP 404 … JIRA_BOARD_ID` | The board id or project key is wrong. `--check` shows what was used |
 | `Jira has no field named "Story Points"` | Your field has another name. Set `JIRA_STORY_POINTS_FIELD` |
 | A sprint tab is missing | Its name does not start with `SPRINT_PREFIX` or does not contain `SPRINT_QUARTER` |
-| Bugs show no Story Points | The *Story Points* field is not enabled for the Bug issue type in Jira |
+| Bugs show no estimate | The *Story Points* field (used here as days) is not enabled for the Bug issue type in Jira |
